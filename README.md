@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<img src="https://www.bing.com/th/id/OGC.c6aceb33240332ec47f115a3a2cdb687?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2f6OxZC2SIEtkAAAAM%2fyes.gif&ehk=xOhqBjDs6pfTDK%2bkHly03hnJZ08tIp7k%2bHcKrMNsaoc%3d" alt="gif">
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adicción a la tecnología: señales, riesgos y cómo equilibrarte</title>
+  <meta name="description" content="Guía clara y práctica para entender la adicción a la tecnología: señales de alerta, tipos, riesgos y un plan simple para recuperar el equilibrio digital." />
+  <meta property="og:title" content="Adicción a la tecnología: señales, riesgos y cómo equilibrarte" />
+  <meta property="og:description" content="Señales de alerta, tipos, riesgos y un plan de 7 días para mejorar tu relación con lo digital." />
+  <meta name="theme-color" content="#0b4c5a" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f6265;
+      --bg-2: #0b4c5a;
+      --card: #0e3f4a;
+      --text: #f8fafc;
+      --muted: #cfe7ea;
+      --accent: #ffb703;
+      --accent-2: #ef233c;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --shadow: 0 10px 30px rgba(0,0,0,.18);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: linear-gradient(120deg,var(--bg) 0%, var(--bg-2) 100%);
+      color:var(--text);
+      line-height:1.65;
+      letter-spacing:.2px;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(8px);
+      background:linear-gradient(180deg, rgba(10,33,38,.8), rgba(10,33,38,0));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    nav{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.5px}
+    .navlinks{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:999px;background:var(--accent);color:#1b1b1b;font-weight:700;border:0;cursor:pointer;box-shadow:var(--shadow)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--text)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:36px 0 12px}
+    .hero h1{font-size:clamp(28px, 4vw, 48px);line-height:1.15;margin:0 0 12px}
+    .hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted)}
+    .hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    .stat{background:rgba(0,0,0,.18);border-radius:14px;padding:14px;text-align:center}
+    .stat strong{display:block;font-size:22px}
+
+    /* Sections */
+    section{padding:28px 0}
+    h2{font-size:clamp(22px,2.6vw,32px);margin:0 0 12px}
+    p.lead{color:var(--muted)}
+
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+    }
+
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px;font-size:20px}
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;letter-spacing:.4px;margin-right:6px}
+
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+
+    /* Callout */
+    .callout{display:flex;gap:16px;align-items:flex-start;border-left:4px solid var(--accent);background:rgba(255,183,3,.12);padding:16px;border-radius:12px}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);color:var(--muted);padding:32px 0}
+
+    /* Toggle */
+    .toggle{display:inline-flex;align-items:center;gap:10px}
+    .switch{position:relative;width:50px;height:28px;background:#12343a;border-radius:999px;border:1px solid rgba(255,255,255,.2);cursor:pointer}
+    .switch i{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:white;transition:all .25s}
+    body.dark{--bg:#0e1217;--bg-2:#0b1015;--card:#121923;--text:#e6eef6;--muted:#c3d2df}
+    body.dark .switch i{left:25px}
+
+    /* Small helpers */
+    figure{margin:0}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(255,255,255,.1);padding:2px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.15)}
+    .small{font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Equilibrio Digital</div>
+        <div class="navlinks">
+          <a href="#que-es">Qué es</a>
+          <a href="#tipos">Tipos</a>
+          <a href="#senales">Señales</a>
+          <a href="#plan">Plan 7 días</a>
+          <a href="#recursos">Recursos</a>
+        </div>
+        <div class="toggle">
+          <span class="small">Modo oscuro</span>
+          <div class="switch" role="switch" aria-checked="false" tabindex="0" id="themeSwitch"><i></i></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="titulo">
+      <div>
+        <h1 id="titulo">Adicción a la tecnología: amarla sin perder el control</h1>
+        <p>La tecnología es herramienta, no destino. El equilibrio consiste en usar lo digital para potenciar tu vida —no para ocuparla por completo. Aquí tienes una guía práctica y respetuosa basada en señales reales y hábitos sostenibles.</p>
+        <div class="stats">
+          <div class="stat"><strong id="counter">00:00:00</strong><span class="small">Tiempo en esta página</span></div>
+          <div class="stat"><strong>3</strong><span class="small">Áreas clave: uso, emoción, sueño</span></div>
+          <div class="stat"><strong>7</strong><span class="small">Días para empezar a mejorar</span></div>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Resumen rápido">
+        <h3 style="margin-top:0">Resumen rápido</h3>
+        <ul class="list">
+          <li>Adicción digital ≠ mala tecnología; es un <strong>uso desadaptativo</strong>.</li>
+          <li>Señales: pérdida de control, abandono de tareas, irritabilidad sin el dispositivo.</li>
+          <li>Comienza con <span class="kbd">bloques de 25 min</span> + <span class="kbd">pausas</span> y <strong>notificaciones esenciales</strong> solamente.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="que-es" class="container">
+      <h2>¿Qué es la “adicción” a la tecnología?</h2>
+      <p class="lead">No es odio a la tecnología. Es dependencia psicológica/ conductual que <em>deteriora</em> áreas importantes de tu vida (estudio, trabajo, relaciones, sueño).</p>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>Se trata de <em>control</em></h3>
+          <p>Cuando intentas limitarte y no puedes, o pasas más tiempo del previsto de forma repetida.</p>
+        </article>
+        <article class="card">
+          <h3>Impacto en el día a día</h3>
+          <p>Descuidos frecuentes, procrastinación, aislamiento social o conflictos por el uso del móvil/PC.</p>
+        </article>
+        <article class="card">
+          <h3>Alivio a corto plazo</h3>
+          <p>Se usa para regular emociones (aburrimiento, ansiedad) y a la vez empeora el bienestar general.</p>
+        </article>
+      </div>
+    </section>
+
+<img src="https://www.bing.com/th/id/OGC.c6aceb33240332ec47f115a3a2cdb687?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2f6OxZC2SIEtkAAAAM%2fyes.gif&ehk=xOhqBjDs6pfTDK%2bkHly03hnJZ08tIp7k%2bHcKrMNsaoc%3d" alt="gif">
+
+    <section id="tipos" class="container">
+      <h2>Tipos frecuentes</h2>
+      <div class="grid cols-3">
+        <article class="card"><h3>Redes sociales</h3><p>Scroll infinito, comparación social, notificaciones constantes.</p></article>
+        <article class="card"><h3>Videojuegos</h3><p>Sesiones prolongadas, descuido de higiene/sueño y responsabilidades.</p></article>
+        <article class="card"><h3>Apuestas/Cripto</h3><p>Búsqueda de “recuperar” pérdidas, checking compulsivo de precios.</p></article>
+        <article class="card"><h3>Contenido adulto</h3><p>Consumo secreto que genera culpa, interfiere con vínculos reales.</p></article>
+        <article class="card"><h3>Trabajo siempre encendido</h3><p>Correo y mensajería laboral 24/7, ausencia de límites.</p></article>
+        <article class="card"><h3>Noticias y foros</h3><p>Doomscrolling, ansiedad informativa y sensación de amenaza constante.</p></article>
+      </div>
+    </section>
+
+    <section id="senales" class="container">
+      <h2>Señales de alerta</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Conductuales</h3>
+          <ul class="list">
+            <li>Intentas reducir y <strong>no lo logras</strong>.</li>
+            <li>Usas el móvil/PC para evitar tareas o emociones.</li>
+            <li>Necesitas cada vez <strong>más tiempo</strong> para sentir el mismo “placer”.</li>
+            <li>Abandonas hobbies, estudio, deporte o amistades.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Físicas & sueño</h3>
+          <ul class="list">
+            <li>Insomnio o sueño de mala calidad por luz azul y activación cognitiva.</li>
+            <li>Molestias visuales, cuello/espalda por posturas mantenidas.</li>
+            <li>Fatiga, dolores de cabeza, hambre emocional.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:16px">
+        <div>⚠️</div>
+        <div>
+          <strong>Si hay deterioro significativo</strong> (riesgo para tu salud, trabajo/estudios o relaciones), busca ayuda profesional. La intervención temprana funciona.
+        </div>
+      </div>
+    </section>
+
+
+    <img src="https://www.bing.com/th/id/OGC.c6aceb33240332ec47f115a3a2cdb687?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2f6OxZC2SIEtkAAAAM%2fyes.gif&ehk=xOhqBjDs6pfTDK%2bkHly03hnJZ08tIp7k%2bHcKrMNsaoc%3d" alt="gif">
+
+
+    
+
+
+    <section id="plan" class="container">
+      <h2>Plan práctico de 7 días</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Día 1–2 · Auditoría y límites</h3>
+          <ul class="list">
+            <li>Desactiva notificaciones no esenciales. Solo <span class="kbd">llamadas</span> y <span class="kbd">familia</span>.</li>
+            <li>Crea <strong>zonas sin pantalla</strong>: mesa de comedor y dormitorio.</li>
+            <li>Regla 20-20-20 para ojos: cada 20 min, mira 20 seg a 6 m.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Día 3–4 · Rutina y sustitutos</h3>
+          <ul class="list">
+            <li>Pomodoro: 25 min enfoque + 5 min pausa, 4 ciclos → descanso largo.</li>
+            <li>Reinstala solo 3 apps clave. Resto, en navegador (más fricción).</li>
+            <li>Introduce <strong>placeres analógicos</strong>: caminar, leer, música.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Día 5–6 · Entorno</h3>
+          <ul class="list">
+            <li>Modo gris/monocromo del móvil por la tarde-noche.</li>
+            <li>Cargador fuera del dormitorio. Despertador físico.</li>
+            <li>Bloquea apps en horarios de estudio/trabajo con límites del sistema.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Día 7 · Revisión amable</h3>
+          <ul class="list">
+            <li>Evalúa: ¿duermes mejor? ¿más tiempo de calidad? Ajusta metas.</li>
+            <li>Define tu <strong>mínimo no negociable</strong>: 1 comida/día sin pantallas, 1h antes de dormir sin móvil.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="container">
+      <h2>Recursos útiles</h2>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>Higiene del sueño</h3>
+          <p>Filtro nocturno, horarios regulares y luz natural por la mañana.</p>
+        </article>
+        <article class="card">
+          <h3>Minimalismo digital</h3>
+          <p>Reduce apps y notificaciones al mínimo que aporta valor real.</p>
+        </article>
+        <article class="card">
+          <h3>Apoyo profesional</h3>
+          <p>Psicoterapia cognitivo-conductual y grupos de apoyo si el problema persiste.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="grid cols-2">
+        <p>Hecho con respeto por la gente y con amor por la buena tecnología. ✨</p>
+        <p style="text-align:right">© <span id="year"></span> Equilibrio Digital</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <img src="https://www.bing.com/th/id/OGC.c6aceb33240332ec47f115a3a2cdb687?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2f6OxZC2SIEtkAAAAM%2fyes.gif&ehk=xOhqBjDs6pfTDK%2bkHly03hnJZ08tIp7k%2bHcKrMNsaoc%3d" alt="gif">
+
+
+  <script>
+    // Reloj de tiempo en página
+    const start = Date.now();
+    const pad = (n)=> String(n).padStart(2,'0');
+    setInterval(()=>{
+      const s = Math.floor((Date.now()-start)/1000);
+      const h = Math.floor(s/3600); const m = Math.floor((s%3600)/60); const ss = s%60;
+      document.getElementById('counter').textContent = `${pad(h)}:${pad(m)}:${pad(ss)}`;
+    }, 1000);
+
+    // Modo oscuro / claro
+    const $switch = document.getElementById('themeSwitch');
+    const setDark = (on)=>{
+      document.body.classList.toggle('dark', on);
+      $switch.setAttribute('aria-checked', on ? 'true' : 'false');
+      localStorage.setItem('prefers-dark', on ? '1' : '0');
+    }
+    // estado inicial
+    const stored = localStorage.getItem('prefers-dark');
+    const prefers = stored !== null ? stored === '1' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setDark(prefers);
+    // eventos
+    $switch.addEventListener('click', ()=> setDark(!document.body.classList.contains('dark')));
+    $switch.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); $switch.click(); }});
+
+    // Año en footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+   
+
+</script>
+</body>
+</html>
+    
