@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;/* Familia de fuentes */
+    font-size: 20.px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #125b5e; /* El color del fondo de la página web */
+    color: hsl(0, 20%, 100%); /* El color del texto*/ 
+}
+h1 {
+    color: #a80008; /* El color de la cabecera */
+    font-size: 36,px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+ 
+
+.gif {
+    border-radius: 0;   /* Quita bordes redondeados */
+    box-shadow: none;   /* Sin sombra */
+    margin: 40px auto;  /* Más espacio alrededor */
+    max-width:  1200px;   /* Tamaño más controlado */
+}
